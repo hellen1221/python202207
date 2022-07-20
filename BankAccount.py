@@ -21,4 +21,4 @@ account1.withdraw(3000)
 print(account1)
 #print(account1.__balance) 에러
 #외부에서 접근하는 백도어 _클래스이름_변수명
-print(account1.BankAccount__balance)
+#print(account1.BankAccount__balance)
