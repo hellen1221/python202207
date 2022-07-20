@@ -1,8 +1,8 @@
 #IO Demo2.py
 
-f = open("demo.txt", "wt")
-f.write("첫번째\n두번째\n세번째\n")
-f.close()
+# f = open("demo.txt", "wt")
+# f.write("첫번째\n두번째\n세번째\n")
+# f.close()
 
 #파일 읽고 처리
 f = open("demo.txt", "rt")
@@ -22,4 +22,9 @@ f.close()
 with open("demo.txt", "rt") as f:
     for item in f.readlines():
         print(item, end="")
+
+print("==Append test")
+f = open("demo.txt", "a+")
+f.write("다른데이터\n")
+f.close()
 
