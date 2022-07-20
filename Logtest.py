@@ -1,3 +1,6 @@
+#Logtest.py
+
+
 
 import re 
 
@@ -9,17 +12,9 @@ g=open('c:\\work\\data\\PV3_copy.txt','wt',encoding='utf-8')
 #파일의 EOF(End Of File)이 아니면 계속 읽도록 한다. 
 line = f.readline()
 while (line != ''):
-    if (re.search("ERROR", line)):
+    if (re.search("Error", line)):
         g.write(line + "\n")
     line = f.readline()
 
 f.close() 
 g.close()
-
-
-
-
-
-
-
-
