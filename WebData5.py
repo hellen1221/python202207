@@ -1,8 +1,12 @@
+# 클리앙 중고거래
+# ui파일없이 하나만 배포가능
+
+
 import sys
 from PyQt5.QtWidgets import *
 import urllib.request
 from bs4 import BeautifulSoup
-import webbrowser   #브라우저로 넘기는 경우 
+import webbrowser   # cell을 더블클릭하면 제어가 브라우저로 넘기는 경우 사용 모듈
 import re 
 
 class Form(QMainWindow):
@@ -14,7 +18,7 @@ class Form(QMainWindow):
         #창의 시작위치와 폭, 높이(x,y,width,height) 
         self.setGeometry(200, 200, 800, 800)
         
-        #입력 텍스트 
+        #입력 텍스트 (입력창)
         self.lineEdit = QLineEdit("", self)
         self.lineEdit.move(20, 20)
 

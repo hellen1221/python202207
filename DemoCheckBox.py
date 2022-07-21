@@ -8,7 +8,8 @@ class DemoWindow(QMainWindow):
         self.setupUI()
 
     def setupUI(self):
-        self.setGeometry(800, 200, 300, 300)
+        # 초기에 창 출력(x,y,w,h)
+        self.setGeometry(100, 100, 400, 400)
 
         self.checkBox1 = QCheckBox("아이폰", self)
         self.checkBox1.move(10, 20)
@@ -18,6 +19,7 @@ class DemoWindow(QMainWindow):
         self.checkBox2 = QCheckBox("안드로이드폰", self)
         self.checkBox2.move(10, 50)
         self.checkBox2.resize(150, 30)
+        #시스널이 발생하면 checkBoxState 메소드 실행 
         self.checkBox2.stateChanged.connect(self.checkBoxState)
 
         self.checkBox3 = QCheckBox("윈도우폰", self)
