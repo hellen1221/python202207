@@ -1,3 +1,5 @@
+
+
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import pyqtSlot, Qt
@@ -48,7 +50,11 @@ class Window(QMainWindow, form_class):
         self.prodID.returnPressed.connect(lambda: self.focusNextChild())
         self.prodName.returnPressed.connect(lambda: self.focusNextChild())
         self.prodPrice.returnPressed.connect(lambda: self.focusNextChild())
+        #더블 클릭 시그널 처리
+        # self.tableWidget,doubleClicked
 
+
+    
     def addProduct(self):
         #입력 파라메터 처리 
         self.name = self.prodName.text()
